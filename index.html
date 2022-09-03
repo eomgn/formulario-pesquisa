@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Formulario de pesquisa</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="./css/style.css" />
+      <!-- FONT -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <div class="header"></div>
+      <div class="container">
+         <div class="box">
+            <form action="#" method="POST">
+               <div class="col-a">
+                  <label>
+                     Nome completo:
+                     <input
+                        type="text"
+                        name="name"
+                        placeholder="Digite seu nome completo"
+                        required
+                        autofocus
+                     />
+                  </label>
+
+                  <label>
+                     RG:
+                     <input
+                        type="number"
+                        name="rg"
+                        pattern="11"
+                        placeholder="RG"
+                        required
+                     />
+                  </label>
+
+                  <label>
+                     Nome do pai:
+                     <input
+                        type="text"
+                        name="dad"
+                        placeholder="Nome do pai"
+                        required
+                     />
+                  </label>
+
+                  <label>
+                     Escolaridade:
+                     <select name="schooling" required>
+                        <option value="schooling">Selecione</option>
+                        <option value="schooling">Superior completo</option>
+                        <option value="schooling">Superior incompleto</option>
+                        <option value="schooling">Superior cursando</option>
+                        <option value="schooling">Técnico</option>
+                        <option value="schooling">Técnico cursando</option>
+                        <option value="schooling">Médio completo</option>
+                        <option value="schooling">Médio incompleto</option>
+                        <option value="schooling">Médio cursando</option>
+                        <option value="schooling">Fundamental completo</option>
+                        <option value="schooling">
+                           Fundamental incompleto
+                        </option>
+                        <option value="schooling">Fundamental cursando</option>
+                     </select>
+                  </label>
+
+                  <label>
+                     Telefone:
+                     <input
+                        type="tel"
+                        name="telephone"
+                        placeholder="Telefone"
+                        required
+                     />
+                  </label>
+
+                  <label>
+                     E-mail:
+                     <input
+                        type="email"
+                        name="e-mail"
+                        placeholder="E-mail"
+                        pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
+                        required
+                     />
+                  </label>
+
+                  <button>Cadastrar</button>
+                  <button>Limpar campos</button>
+               </div>
+
+               <div class="col-b">
+                  <label>
+                     Data de Nascimento:
+                     <input type="date" name="birth" required />
+                  </label>
+
+                  <label>
+                     CPF:
+                     <input
+                        type="number"
+                        name="cpf"
+                        maxlength="11"
+                        pattern="[0-9]{11}"
+                        placeholder="CPF"
+                        required
+                     />
+                  </label>
+
+                  <label>
+                     Nome do pai:
+                     <input
+                        type="text"
+                        name="mother"
+                        placeholder="Nome do pai"
+                        required
+                     />
+                  </label>
+
+                  <label>
+                     Profissão:
+                     <input
+                        type="text"
+                        name="profession"
+                        placeholder="Profissão"
+                        required
+                     />
+                  </label>
+
+                  <label>
+                     Celular:
+                     <input
+                        type="tel"
+                        name="celular"
+                        placeholder="(DDD) 0000-0000"
+                     />
+                  </label>
+               </div>
+            </form>
+         </div>
+      </div>
+      <div class="header"></div>
+   </body>
+</html>
